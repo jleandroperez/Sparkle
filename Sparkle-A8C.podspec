@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   }
 
   s.platform = :osx, '10.7'
-  s.source   = { :git => "https://github.com/jleandroperez/Sparkle/releases/download/#{s.version}/Sparkle-#{s.version}.tar.bz2", :tag => "2.0-a8c-beta" }
+  s.source   = { :https => "https://github.com/jleandroperez/Sparkle/releases/download/#{s.version}/Sparkle-#{s.version}.tar.bz2", :tag => "2.0-a8c-beta" }
   s.source_files = 'Sparkle.framework/Versions/A/Headers/*.h'
 
   s.preserve_paths = 'bin/*'
