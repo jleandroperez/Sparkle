@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = "Sparkle-A8C"
-  s.version     = "2.0.2"
+  s.version     = "2.0.3"
   s.summary     = "A software update framework for macOS"
   s.description = "Sparkle is an easy-to-use software update framework for Cocoa developers."
   s.homepage    = "http://sparkle-project.org"
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.preserve_paths = 'bin/*', 'XPCServices'
   s.resource_bundles = {
-    'XPCServices' => ['bin/*']
+    'XPCServices' => ['XPCServices/*']
   }
   s.public_header_files = 'Sparkle.framework/Versions/A/Headers/*.h'
   s.vendored_frameworks  = 'Sparkle.framework'
